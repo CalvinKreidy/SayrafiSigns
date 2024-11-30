@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@media (min-width: 1108px)
+{
+    body {
+        font-family: Montserrat;
+        margin: 0px;
+        font-size: 12px;    
+    }
+
+    .box {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in 0.2s forwards, moveRight 0.5s ease-in-out 0.2s forwards;
+    }
+
+    #logo {
+        cursor: pointer;
+        width: 65px; 
+        animation: fadeIn 0.5s ease-in forwards, moveRight 0.5s ease-in-out forwards;
+    }
+
+    #LinkContactUs {
+        align-self: center;
+        cursor: pointer;
+        opacity: 0; 
+        animation: fadeIn 0.5s ease-in 0.2s forwards, moveRight 0.5s ease-in-out 0.2s forwards;
+    }
+
+    #Gallery {
+        align-self: center;
+        cursor: pointer;
+        opacity: 0; 
+        animation: fadeIn 0.5s ease-in 0.2s forwards, moveRight 0.5s ease-in-out 0.2s forwards; 
+    }
+
+    #ServiceOfferings {
+        align-self: center;
+        cursor: pointer;
+        opacity: 0; 
+        animation: fadeIn 0.5s ease-in 0.2s forwards, moveRight 0.5s ease-in-out 0.2s forwards; 
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-right: 70px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        padding: 30px 0px 30px 7%;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-rows: 65px;
+        justify-content: left;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.85);
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #SS {
+        opacity: 0;
+        width: 250px;
+        align-self: center;
+        animation: wipeInFromLeft 0.9s ease-out forwards, wipeOutFromRight 1s ease-out forwards;
+        animation-delay: 1s, 5s;
+    }
+
+    .CarouselImage {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        opacity: 0; 
+        animation: fadeIn 0.5s ease-in forwards, moveRight 0.5s ease-in-out forwards; 
+    }
+
+    .box {
+        width: 25%;
+        padding: 10px 10px 22px 10px;
+        margin-left: 7%;
+        position: absolute;
+        top: 25%;
+        border-radius: 5px;
+        border-left: 1px solid #000000;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3px);
+    }
+
+    .CarouselTitle {
+        color: #2b65da;
+        font-weight: bold;
+        font-size: 47.5px;
+        font-family: Montserrat;
+        letter-spacing: 5px;
+    }
+
+    .CarouselDescription {
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        margin-top: 35px;
+        letter-spacing: 2px;
+        font-family: Montserrat;
+        line-height: 18px;
+
+    }
+
+    .CarouselButtonContainer {
+        display: flex;
+        margin-top: 46px;
+    }
+
+    .CarouselButton1 {
+        cursor: pointer;
+        width: 120px;
+        height: 40px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px #000000;
+        letter-spacing: 1px;
+        font-family: Montserrat;
+    }
+
+    .CarouselButton2 {
+        cursor: pointer;
+        margin-left: 20px;
+        width: 120px;
+        height: 40px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-family: Montserrat;
+    }
+
+    .OrientedListElement {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(3px);
+        border: 3px solid #ffffff;
+        box-shadow: 0px 0px 7px #000000;
+        border-radius: 50%;
+        opacity: 0; 
+        animation: fadeIn 0.5s ease-in 0.2s forwards, moveRight 0.5s ease-in-out 0.2s forwards;
+    }
+
+    .OrientedList {
+        display: grid;
+        grid-template-columns: 60px 60px;
+        position: relative;
+        top: 86.2vh;
+        margin-left: 88.5%;
+    }
+
+    #LinkContactUs:hover {
+        color: #2b65da;
+    }
+
+    #Gallery:hover {
+        color: #2b65da;
+    }
+
+    #ServiceOfferings:hover {
+        color: #2b65da;
+    }
+
+    .CarouselButton1:hover {
+        background-color: Black;
+        color: white;
+        border: 0px;
+        transform: translateY(-4px);
+    }
+
+    .CarouselButton2:hover {
+        background-color: #2b65da;
+        color: white;
+        border: 0px;
+        transform: translateY(-4px);
+    }
+
+    .OrientedListElement:hover {
+        border: 1px solid white;
+    }
+
+    @keyframes wipeInFromLeft {
+        from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        0% {
+           
+            clip-path: inset(0 100% 0 0);
+        }
+        100% {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
+    @keyframes wipeOutFromRight {
+        0% {
+            clip-path: inset(0 0 0 0);
+        }
+        100% {
+            clip-path: inset(0 100% 0 0);
+        }
+    }
+
+    @keyframes moveRight {
+        from {
+          transform: translateX(-10px);
+        }
+        to {
+          transform: translateX(0px);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+}
